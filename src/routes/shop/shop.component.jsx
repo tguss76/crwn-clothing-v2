@@ -1,8 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import CategoriesPreview from '../categories-preview/categories-preview.componet';
-import Category from '../category/category.component';
-
-
+import Directory from '../../components/directory/directory.component';
 import {ShopPageContainer} from './shop.styles';
 
 const Shop = () => {
@@ -11,7 +9,7 @@ const Shop = () => {
         <ShopPageContainer>
           <Routes>
             <Route index element={<CategoriesPreview/>} />
-            <Route path=':category' element={<Category/>} />
+            <Route path=':category' element={<Directory/>} />
           </Routes>
         </ShopPageContainer>
         );
